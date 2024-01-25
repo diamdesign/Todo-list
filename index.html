@@ -7,14 +7,19 @@
 		<title>Todo list</title>
 	</head>
 	<body>
-		<div class="todo-container">
+		<div id="todo-container">
 			<h1>Todo list</h1>
-			<form action="">
+			<form>
 				<input id="newtodo" type="text" placeholder="Write a new todo..." />
 			</form>
-			<div class="todo">
-				<div class="check"><input type="checkbox" /></div>
-				<div class="name">This is a todo</div>
+			<div id="todolist">
+				<div class="todo" onclick="todoclick(event);">
+					<div class="check"><input type="checkbox" /></div>
+					<div class="name">This is a todo</div>
+					<span class="arrow" onclick="moveTodoUp(this)">↑</span>
+					<span class="arrow" onclick="moveTodoDown(this)">↓</span>
+					<span class="arrow delete" onclick="deleteTodo(this)">x</span>
+				</div>
 			</div>
 		</div>
 		<script src="todo.js"></script>
