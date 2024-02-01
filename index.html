@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Todo list</title>
 	</head>
@@ -12,15 +16,7 @@
 			<form>
 				<input id="newtodo" type="text" placeholder="Write a new todo..." />
 			</form>
-			<div id="todolist">
-				<div class="todo" onclick="todoclick(event);">
-					<div class="check"><input type="checkbox" /></div>
-					<div class="name">This is a todo</div>
-					<span class="arrow" onclick="moveTodoUp(this)">↑</span>
-					<span class="arrow" onclick="moveTodoDown(this)">↓</span>
-					<span class="arrow delete" onclick="deleteTodo(this)">x</span>
-				</div>
-			</div>
+			<div id="todolist"></div>
 		</div>
 		<script src="todo.js"></script>
 	</body>
