@@ -19,15 +19,12 @@ function createTodo(newInput) {
 	const todo = `<div class="todo" onclick="todoclick(event);">\
                     <div class="check"><input type="checkbox" /></div>\
                     <div class="name">${newInput}</div>\
-                    <span class="arrow" onclick="moveTodoUp(this)"><span class="material-symbols-outlined">
-keyboard_arrow_up
-</span></span>\
-                    <span class="arrow" onclick="moveTodoDown(this)"><span class="material-symbols-outlined">
-keyboard_arrow_down
-</span></span>\
-                    <span class="arrow delete" onclick="deleteTodo(this)"><span class="material-symbols-outlined">\
-delete
-</span></span>\
+                    <span class="arrow" onclick="moveTodoUp(this)">\
+						<span class="material-symbols-outlined">keyboard_arrow_up</span></span>\
+                    <span class="arrow" onclick="moveTodoDown(this)">
+						<span class="material-symbols-outlined">keyboard_arrow_down</span></span>\
+                    <span class="arrow delete" onclick="deleteTodo(this)">
+						<span class="material-symbols-outlined">\delete</span></span>\
   </div>
                 </div>`;
 
